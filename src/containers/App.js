@@ -1,7 +1,7 @@
 import React from "react";
 import CardList from '../components/CardList';
 import Searchbox from '../components/Searchbox.js';
-// import { robots } from './robots.js';
+import { robots } from '../robots.js';
 import Scroll from '../components/Scroll.js'
 import ErrorBoundary from '../components/ErrorBoundary.js'
 import './App.css';
@@ -23,7 +23,8 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://jsonplaceholder.typicode.com/users').then(response => response.json()).then(users => this.setState({ robots: users }))
+        // fetch('http://jsonplaceholder.typicode.com/users').then(response => response.json()).then(users => this.setState({ robots: users }))
+        this.setState({ robots: robots })
     }
 
     render() { 
