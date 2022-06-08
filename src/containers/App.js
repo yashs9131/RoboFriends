@@ -11,7 +11,7 @@ class App extends React.Component {
     constructor() {
         super()
         this.state = {
-            robots: [],
+            robots: robots,
             searchfield: '',
         }
     }
@@ -22,10 +22,10 @@ class App extends React.Component {
 
     }
 
-    componentDidMount() {
+   // componentDidMount() {
         // fetch('http://jsonplaceholder.typicode.com/users').then(response => response.json()).then(users => this.setState({ robots: users }))
-        this.setState({ robots: robots })
-    }
+        // this.setState({ robots: robots })
+   // }
 
     render() { 
 
