@@ -34,7 +34,7 @@ class App extends React.Component {
         if (this.state.robots.length === 0) {
             return <h1 className="tc f-5 grow">Loading...</h1>
         }
-<<<<<<< HEAD
+        
         return  (
             <div className="tc">
             <h1 className="f-5 grow">RoboFriends</h1>
@@ -46,20 +46,6 @@ class App extends React.Component {
                 </Scroll>
             </div>
         )
-=======
-        
-            return  (
-                <div className="tc">
-                <h1 className="f-5 grow">RoboFriends</h1>
-                <Searchbox searchChange={this.onSearchChange} />
-                <Scroll>    
-                    <ErrorBoundary>
-                        <CardList robots={filteredRobots}/>
-                    </ErrorBoundary>
-                </Scroll>
-                </div>
-            )
->>>>>>> 0a18b054f9b87425c81da74c40f1e63cf13ae907
     }
 }
 
