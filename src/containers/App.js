@@ -35,7 +35,8 @@ class App extends React.Component {
             return <h1 className="tc f-5 grow">Loading...</h1>
         }
         return  (
-            <div>
+            <div className='tc'>
+            <h1 className='f1 grow'>RoboFriends</h1>
             <Searchbox searchChange={this.onSearchChange} />
             <Scroll>    
                 <ErrorBoundary>
