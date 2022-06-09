@@ -34,10 +34,8 @@ class App extends React.Component {
         if (this.state.robots.length === 0) {
             return <h1 className="tc f-5 grow">Loading...</h1>
         }
-        
         return  (
-            <div className="tc">
-            <h1 className="f-5 grow">RoboFriends</h1>
+            <div>
             <Searchbox searchChange={this.onSearchChange} />
             <Scroll>    
                 <ErrorBoundary>
